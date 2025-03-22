@@ -1,0 +1,7 @@
+textarea {
+    font-family: var(--font-mono);
+}
+
+footer {
+    display: none !important;
+}
