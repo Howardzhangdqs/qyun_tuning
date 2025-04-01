@@ -194,7 +194,7 @@ with gr.Blocks(title="青云调参", css_paths="./style.css") as demo:
                 kd_min = gr.Number(label="Kd最小值", value=0.0)
                 kd_max = gr.Number(label="Kd最大值", value=10.0)
 
-            pop_size = gr.Slider(2, 50, value=5, step=1, label="种群大小")
+            pop_size = gr.Slider(2, 50, value=4, step=1, label="种群大小")
             max_gen = gr.Slider(1, 50, value=10, step=1, label="迭代次数")
             cx_prob = gr.Slider(0.0, 1.0, value=0.7, step=0.05, label="交叉概率")
             mut_prob = gr.Slider(0.0, 1.0, value=0.2, step=0.05, label="变异概率")
@@ -234,4 +234,4 @@ with gr.Blocks(title="青云调参", css_paths="./style.css") as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=True)
