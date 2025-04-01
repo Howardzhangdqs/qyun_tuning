@@ -1,0 +1,4 @@
+deap>=1.4.2
+gradio>=5.23.2
+numpy>=2.2.4
+pandas>=2.2.3
